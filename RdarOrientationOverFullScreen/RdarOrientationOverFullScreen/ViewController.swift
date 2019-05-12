@@ -12,9 +12,22 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        print(".portrait")
+        return [ .portrait ]
     }
 
-
+    @IBAction func nextPageButtonTapped(_ sender: Any) {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailViewController")
+        
+        // this line causes the bug
+        vc.modalPresentationStyle = .overFullScreen
+        
+        self.present(vc, animated: true) {
+        }
+    }
+    
 }
 

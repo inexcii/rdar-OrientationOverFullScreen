@@ -12,6 +12,8 @@
 		000BF0DF22886150005A826A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 000BF0DD22886150005A826A /* Main.storyboard */; };
 		000BF0E122886151005A826A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 000BF0E022886151005A826A /* Assets.xcassets */; };
 		000BF0E422886151005A826A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 000BF0E222886151005A826A /* LaunchScreen.storyboard */; };
+		000BF0EC228864B3005A826A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000BF0EB228864B3005A826A /* DetailViewController.swift */; };
+		000BF0EE2288683E005A826A /* OrientationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000BF0ED2288683E005A826A /* OrientationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		000BF0E022886151005A826A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		000BF0E322886151005A826A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		000BF0E522886151005A826A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000BF0EB228864B3005A826A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		000BF0ED2288683E005A826A /* OrientationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				000BF0D922886150005A826A /* AppDelegate.swift */,
 				000BF0DB22886150005A826A /* ViewController.swift */,
+				000BF0EB228864B3005A826A /* DetailViewController.swift */,
+				000BF0ED2288683E005A826A /* OrientationController.swift */,
 				000BF0DD22886150005A826A /* Main.storyboard */,
 				000BF0E022886151005A826A /* Assets.xcassets */,
 				000BF0E222886151005A826A /* LaunchScreen.storyboard */,
@@ -135,7 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				000BF0EC228864B3005A826A /* DetailViewController.swift in Sources */,
 				000BF0DC22886150005A826A /* ViewController.swift in Sources */,
+				000BF0EE2288683E005A826A /* OrientationController.swift in Sources */,
 				000BF0DA22886150005A826A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4K82SD9BR9;
 				INFOPLIST_FILE = RdarOrientationOverFullScreen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +312,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4K82SD9BR9;
 				INFOPLIST_FILE = RdarOrientationOverFullScreen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
